@@ -123,3 +123,12 @@ button:hover {
 .markdown {
     text-align: left;
 }
+
+.channelList {
+    background: #666;
+    font-weight: 700;
+    height: 32px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0px;
+}
