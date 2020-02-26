@@ -1,4 +1,5 @@
 import React from "react";
+const ReactMarkdown = require('react-markdown')
 
 const formatDateFromTimestamp = (timestamp) => {
   const date = new Date(timestamp * 1000);
@@ -14,7 +15,7 @@ function TextMessageBox({ message, user }) {
   return (
     <div className={`textMessage ${color}`}>
       <span>{message.sentBy} - {formatDateFromTimestamp(message.createdAt.seconds)}</span>
-      <span>{message.message}</span>
+      <ReactMarkdown className="markdown" source={message.message}></ReactMarkdown>
     </div>
   );
 }

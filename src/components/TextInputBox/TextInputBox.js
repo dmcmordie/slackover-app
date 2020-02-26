@@ -47,6 +47,7 @@ const TextInputBox = ({ messagesApi, user }) => {
   }
 
   const onKeyPress = (e) => {
+
         if(e.charCode === 13) {
             e.preventDefault();
             const text = parseText(newMessage);
@@ -62,7 +63,7 @@ const TextInputBox = ({ messagesApi, user }) => {
       <Slate editor={editor} value={newMessage} onChange={value => {
           setNewMessage(value);
         }}>
-        <Editable placeholder="Message #channel" onKeyPress={onKeyPress} />
+        <Editable placeholder="Message #channel" />
       </Slate>
       <button onClick={onSubmit}>Send</button>
       <button onClick={() => setShowEmoji(!showEmoji)}>Emoji Picker</button>
