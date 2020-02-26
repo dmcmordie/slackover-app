@@ -118,3 +118,7 @@ button {
 button:hover {
   background-color: #0084FF;
 }
+
+.markdown {
+    text-align: left;
+}
