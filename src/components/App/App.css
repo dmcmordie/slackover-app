@@ -10,6 +10,31 @@ body {
   text-align: center;
 }
 
+.message {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px #aaa solid;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+aside.emoji-picker-react {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 280px;
+    font-family: sans-serif;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px #efefef;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
 h1 {
   color: #d4d3d8;
 }
@@ -78,13 +103,13 @@ div.chatWindow {
 /* Generic button css for send and log out */
 button {
   text-align: left;
-  width: 50%;
+  width: 40%;
   float: left;
   background-color: #4f5358;
   color: white;
   font-size: 1.5rem;
   padding: 14px 20px;
-  margin: 10px 0;
+  margin: 10px 10px 10px 0px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
