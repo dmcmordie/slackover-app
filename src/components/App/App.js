@@ -51,7 +51,7 @@ const App = () => {
       )}
       {signedIn && (
         <>
-          <h1>Generic Chat!</h1>
+          <h1>NUCATS NUCHAT</h1>
           <p>
             <button
               onClick={e => {
