@@ -4,7 +4,7 @@ function ChannelList({ messages, user }) {
 
   return (
     <div className={`channel`}>
-        <p>You could add channels list</p>
+        <p className="channelName">#general</p>
     </div>
   );
 }

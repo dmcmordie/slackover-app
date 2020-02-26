@@ -63,7 +63,7 @@ const TextInputBox = ({ messagesApi, user }) => {
       <Slate editor={editor} value={newMessage} onChange={value => {
           setNewMessage(value);
         }}>
-        <Editable placeholder="Message #channel" />
+        <Editable placeholder="Message #general" />
       </Slate>
       <button onClick={onSubmit}>Send</button>
       <button onClick={() => setShowEmoji(!showEmoji)}>Emoji Picker</button>

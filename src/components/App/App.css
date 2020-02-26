@@ -55,9 +55,10 @@ div.chatWindow {
 
 /* textMessage is a class for all text messages */
 .textMessage {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 5px 15px;
-  margin: 15px;
+  /* margin: 15px; */
+  border: 1px solid #1A1D21;
 }
 
 /* Each text message has two spans, one for the sender and one for the message */
@@ -121,4 +122,13 @@ button:hover {
 
 .markdown {
     text-align: left;
+}
+
+.channelList {
+    background: #666;
+    font-weight: 700;
+    height: 32px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0px;
 }
